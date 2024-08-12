@@ -1,9 +1,10 @@
 import './App.css';
+import Contact from './pages/Contact'
 
 function App() {
   return (
-    <div className="mx-4 text-xl justify-center flex items-center">
-      Hello World
+    <div className="app">
+      <Contact/>
     </div>
   );
 }
