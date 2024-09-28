@@ -5,7 +5,9 @@ import img3 from '../assets/img3.jpg'
 import img4 from '../assets/img4.png'
 import img5 from '../assets/img5.png'
 import img6 from '../assets/img6.png'
-import contact from '../assets/contact.svg'
+import contact1 from '../assets/contact1.svg'
+
+import ReCAPTCHA from "react-google-recaptcha";
 
 import Slider from 'react-slick';
 
@@ -33,7 +35,7 @@ const imageList = [
     title: "Be part of something bigger.",
     discription:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo sed eum recusandae, quisquam corporis blanditiis nisi quis ex, voluptates sit aliquam suscipit eius veniam beatae soluta facilis reprehenderit. Recusandae, quasi!",
-  }
+  },
 ]
 
 const ContactData = [
@@ -67,24 +69,24 @@ const ContactData = [
     // subtitle: "USA Office: West Windsor, New Jeresy USA",
     subtitle: (
       <a
-      href="https://www.google.com/maps?q=West+Windsor,+NJ+08550,+USA"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:underline"
+        href="https://www.google.com/maps?q=West+Windsor,+NJ+08550,+USA"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
       >
-          USA Office: West Windsor, New Jersey USA
-        </a>
+        USA Office: West Windsor, New Jersey USA
+      </a>
     ),
-    
+
     subtitle2: (
-        <a
-          href="https://www.google.com/maps?q=Noida,+UP,+India"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline"
-        >
-         India OffShore: Noida, UP, India
-        </a>
+      <a
+        href="https://www.google.com/maps?q=Noida,+UP,+India"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        India OffShore: Noida, UP, India
+      </a>
     )
   }
 
@@ -92,12 +94,15 @@ const ContactData = [
 
 
 export default function Contact() {
+
+  const onChange =() =>{}
+
   var settings = {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 800,
-    SlideToScroll: 1,
+    speed: 2000,
+    SlideToScroll: 2,
     autoplay: true,
     autoplaySpeed: 4000,
     cssEase: "ease-in-out",
@@ -107,13 +112,13 @@ export default function Contact() {
 
   return (
     <>
-      <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center duration-200'>
+      <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-primary2 flex justify-center items-center duration-200'>
 
         {/* background pattern */}
-        <div className='h-[500px] w-[500px] bg-primary/40 absolute -top-1/3 right-10  rounded-3xl rotate-45 -z-9'></div>
+        <div className='h-[500px] w-[500px] bg-secondary2 absolute -top-1/3 right-10  rounded-3xl rotate-45 -z-9'></div>
 
         {/* hero section */}
-        <div className='container pb-8 sm:pb-0 px-7 '>
+        <div className='container pb-8 sm:pb-0 px-7 text-btnColor font-serif'>
           <Slider {...settings}>
             {imageList.map((data) => (
               <div>
@@ -123,7 +128,7 @@ export default function Contact() {
                     <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h1>
                     <p className='text-sm'>{data.discription}</p>
                     <div>
-                      <button className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full'>
+                      <button className='bg-btnColor hover:scale-105 duration-200 text-white py-2 px-4 rounded-full'>
                         Contact Now
                       </button>
                     </div>
@@ -134,7 +139,7 @@ export default function Contact() {
                       <img src={data.img} alt="not available" className='w-[300px] h-[400px] sm:h-[400px] sm:w-[450px] sm:scale-105 lg:h-[450px] lg:w[400px] lg:scale-120 object-contain mx-auto' />
                     </div>
                   </div>
-                </div>
+                </div>              
               </div>
             ))}
           </Slider>
@@ -146,14 +151,14 @@ export default function Contact() {
         <div className='container'>
           {/* header section */}
           <div className='text-center mb-24 max-w-[600px] mx-auto'>
-            <h1 className='text-4xl text-primary'>Connects Us Through</h1>
-            <p className='text-x5 text-gray-400'>We’re always here to listen and support your innovative ideas that can make the world a better place. Share your thoughts with us, and we’ll respond promptly to help you bring them to life</p>
+            <h1 className='text-4xl text-secondary2'>Connects Us Through</h1>
+            <p className='text-x5 text-btnColor/50'>We’re always here to listen and support your innovative ideas that can make the world a better place. Share your thoughts with us, and we’ll respond promptly to help you bring them to life</p>
           </div>
           {/* body section */}
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-24 md:gap-24 lg:gap-5 place-items-center'>
             {
               ContactData.map((data) => (
-                <div className='rounded-2xl bg-gray-100 hover:bg-primary/70 hover:text-white relative shadow-xl duration-300 group max-w-[300px] w-[300px] h-44'>
+                <div className='rounded-2xl bg-primary2 hover:bg-primary/70 hover:text-white relative shadow-xl duration-300 group max-w-[300px] w-[300px] h-44'>
                   {/* image section */}
                   <div className='h-[80px]'>
                     <img src={data.img} alt="not avail" className='max-w-[100px] block mx-auto transform -translate-y-14 group-hover:scale-105 duration-300 drop-shadow-md' />
@@ -178,29 +183,33 @@ export default function Contact() {
       </div>
 
 
-{/* Contact form */}
-      <div data-aos= "zoom-in" className=' mb-20 bg-primary/80 text-white mt-24'>
-        <div className='container backdrop-blur-sm py-10 grid grid-cols-1 md:grid-cols-2 gap-24'>
-            <img src={contact} alt="not avail" className='block mx-auto transform -translate-y-14 group-hover:scale-105 duration-300 drop-shadow-md w-96 mt-36' />
-          
+      {/* Contact form */}
+      <div data-aos="zoom-in" className='mb-20 bg-secondary2/100 text-btnColor mt-44'>
+        <div className='container backdrop-blur-sm py-8 grid grid-cols-1 md:grid-cols-2 gap-24'>
+          <img src={contact1} alt="not avail" className='block mx-auto transform -translate-y-14 group-hover:scale-105 duration-300 drop-shadow-md w-[432px] mt-36' />
+
           <div className='space-y-6 max-w-xl lg:ms-20 '>
             <h1 className='text-2xl text-center sm:text-left sm:text-4xl font-bold'>Get in touch</h1>
             <div className=''>
-            <label classname="">Name</label>
-            <input type='text' name='name' data-aos="fade-up" className='w-full p-3' placeholder='Insert Your Name'/>
+              <label classname="">Name</label>
+              <input type='text' name='name' data-aos="fade-up" className='w-full p-3' placeholder='Insert Your Name' />
             </div>
 
             <div className=''>
-            <label classname="">Mail</label>
-            <input type='email' name='email' data-aos="fade-up" className='w-full p-3' placeholder='Insert Your email'/>
+              <label classname="">Mail</label>
+              <input type='email' name='email' data-aos="fade-up" className='w-full p-3' placeholder='Insert Your email' />
             </div>
 
             <div className=''>
-            <label classname="">Message</label>
-            <textarea name="Project"cols={30} rows={10} data-aos="fade-up" className="w-full p-3 resize-none" placeholder='How can we help?'></textarea>
+              <label classname="">Message</label>
+              <textarea name="Project" cols={30} rows={10} data-aos="fade-up" className="w-full p-3 resize-none h-32" placeholder='How can we help?'></textarea>
             </div>
 
-            <button className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-md'>Send Message</button>
+            <ReCAPTCHA
+                        sitekey="6LcYQCgqAAAAABUBvbdOIcGMAQDlxyHNAvE43_CI"
+                        onChange={onChange}
+                      />,
+            <button className='bg-btnColor hover:scale-105 duration-100 text-white py-2 px-4 rounded-md'>Send Message</button>
 
 
           </div>
