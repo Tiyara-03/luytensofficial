@@ -104,7 +104,7 @@ export default function Contact() {
     speed: 2000,
     SlideToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3600,
     cssEase: "ease-in-out",
     pauseOnHover: false,
     pauseOnFocus: true,
@@ -118,13 +118,13 @@ export default function Contact() {
         <div className='h-[500px] w-[500px] bg-secondary2 absolute -top-1/3 right-10  rounded-3xl rotate-45 -z-9'></div>
 
         {/* hero section */}
-        <div className='container pb-8 sm:pb-0 px-7 text-btnColor font-serif'>
+        <div className='container mx-0 px-0 lg:mx-auto lg:container pb-8 sm:pb-0 text-btnColor font-serif'>
           <Slider {...settings}>
             {imageList.map((data) => (
               <div>
                 <div className='grid grid-cols-1 sm:grid-cols-2'>
                   {/* text contant section */}
-                  <div className='flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10' >
+                  <div className='flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10 lg:ml-12' >
                     <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h1>
                     <p className='text-sm'>{data.discription}</p>
                     <div>
@@ -135,7 +135,7 @@ export default function Contact() {
                   </div>
                   {/* Image section */}
                   <div className='order-1 sm:order-2 '>
-                    <div className='relative x-10'>
+                    <div className='relative x-10 '>
                       <img src={data.img} alt="not available" className='w-[300px] h-[400px] sm:h-[400px] sm:w-[450px] sm:scale-105 lg:h-[450px] lg:w[400px] lg:scale-120 object-contain mx-auto' />
                     </div>
                   </div>
@@ -148,7 +148,7 @@ export default function Contact() {
       </div>
 
       <div>
-        <div className='container'>
+        <div className='container mt-12'>
           {/* header section */}
           <div className='text-center mb-24 max-w-[600px] mx-auto'>
             <h1 className='text-4xl text-secondary2'>Connects Us Through</h1>

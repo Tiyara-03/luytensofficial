@@ -67,8 +67,8 @@ export default function Footer() {
                 <div className='grid md:grid-cols-3 lg:grid-cols-4 pv-44 pt-5'>
                     {/* Company Details */}
                     <div className='pb-8 px-4'>
-                        <h1 className='sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3'
-                        ><img src={logo3} alt="" className='max-w-[220px]' /></h1>
+                        <h1 className='sm:text-3xl text-xl font-bold sm:text-left text-justify flex items-center gap-3'
+                        ><img src={logo3} alt="" className='max-w-[250px]' /></h1>
                         <div className="flex items-center gap-3 mt-1 mb-2 ">
                             <a href="/#">
                                 <i class="ri-twitter-x-fill text-3xl"></i>
@@ -108,7 +108,7 @@ export default function Footer() {
                                 <ul className='flex flex-col gap-3'>
                                     {
                                         QuickLinks.map((link) => (
-                                            <li className='cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-black/70' key={link.title}><span>{link.title}</span></li>
+                                            <li className='cursor-pointer hover:text-secondary2 hover:translate-x-1 duration-300 text-black/70' key={link.title}><span>{link.title}</span></li>
                                         ))
                                     }
                                 </ul>
@@ -120,7 +120,7 @@ export default function Footer() {
                     <div className='py-8 px-4'>
                         <div className=''>
                             <div className='flex flex-col items-start gap-3 justify-start'>
-                                <h1 className='sm:text-3xl text-xl font-bold sm:text-left mb-3 text-justify'>Our Newsletter</h1>
+                                <h1 className= 'sm:text-3xl text-xl font-bold sm:text-left mb-3 text-justify'>Our Newsletter</h1>
                                 <p>
                                     Never miss out on our company's latest news, updates, and exclusive offers! Subscribe to our newsletter today and get the inside scoop delivered straight to your inbox.
                                 </p>
@@ -134,7 +134,7 @@ export default function Footer() {
                                     />
                                 </div>
 
-                                <button className='py-1 px-4 bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-100 hover:bg-primary text-white'>Subscribe</button>
+                                <button className='py-1 px-4 bg-btnColor hover:scale-105 duration-100 text-white'>Subscribe</button>
                             </div>
 
                         </div>

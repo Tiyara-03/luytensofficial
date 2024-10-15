@@ -9,7 +9,8 @@ module.exports = {
         secondary: "#ed8900",
         secondary2: "#ffda79",
         tertiary: "#f9f6f1",
-        btnColor: "#0d0c22"
+        btnColor: "#0d0c22",
+        statsPart: "#143942",
       },
 
       container:{
