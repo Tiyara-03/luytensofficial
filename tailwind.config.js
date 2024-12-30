@@ -11,6 +11,11 @@ module.exports = {
         tertiary: "#f9f6f1",
         btnColor: "#0d0c22",
         statsPart: "#143942",
+
+        LightBlack: "#222",
+        OffWhite: "#f3efef",
+        Orange: "#d6a3e5",
+        lightblack: '#141414',
       },
 
       container:{

@@ -95,7 +95,7 @@ const ContactData = [
 
 export default function Contact() {
 
-  const onChange =() =>{}
+  const onChange = () => { }
 
   var settings = {
     dots: false,
@@ -112,10 +112,10 @@ export default function Contact() {
 
   return (
     <>
-      <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-primary2 flex justify-center items-center duration-200'>
+      <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-white flex justify-center items-center duration-200 pt-32'>
 
         {/* background pattern */}
-        <div className='h-[500px] w-[500px] bg-secondary2 absolute -top-1/3 right-10  rounded-3xl rotate-45 -z-9'></div>
+        {/* <div className='h-[500px] w-[500px] bg-purple-200 absolute -top-1/3 right-10  rounded-3xl rotate-45 -z-9'></div> */}
 
         {/* hero section */}
         <div className='container mx-0 px-0 lg:mx-auto lg:container pb-8 sm:pb-0 text-btnColor font-serif'>
@@ -139,7 +139,7 @@ export default function Contact() {
                       <img src={data.img} alt="not available" className='w-[300px] h-[400px] sm:h-[400px] sm:w-[450px] sm:scale-105 lg:h-[450px] lg:w[400px] lg:scale-120 object-contain mx-auto' />
                     </div>
                   </div>
-                </div>              
+                </div>
               </div>
             ))}
           </Slider>
@@ -184,7 +184,7 @@ export default function Contact() {
 
 
       {/* Contact form */}
-      <div data-aos="zoom-in" className='mb-20 bg-secondary2/100 text-btnColor mt-44'>
+      <div data-aos="zoom-in" className='mb-20 bg-purple-200 text-btnColor mt-44'>  {/* bg-secondary2/100*/}
         <div className='container backdrop-blur-sm py-8 grid grid-cols-1 md:grid-cols-2 gap-24'>
           <img src={contact1} alt="not avail" className='block mx-auto transform -translate-y-14 group-hover:scale-105 duration-300 drop-shadow-md w-[432px] mt-36' />
 
@@ -206,15 +206,12 @@ export default function Contact() {
             </div>
 
             <ReCAPTCHA
-                        sitekey="6LcYQCgqAAAAABUBvbdOIcGMAQDlxyHNAvE43_CI"
-                        onChange={onChange}
-                      />,
+              sitekey="6LcYQCgqAAAAABUBvbdOIcGMAQDlxyHNAvE43_CI"
+              onChange={onChange}
+            />,
             <button className='bg-btnColor hover:scale-105 duration-100 text-white py-2 px-4 rounded-md'>Send Message</button>
-
-
           </div>
         </div>
-
       </div>
     </>
   )

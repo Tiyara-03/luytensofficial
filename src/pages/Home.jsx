@@ -11,6 +11,8 @@ import eve from '../assets/Everest.jpg'
 // import card from '../assets/Hcard.jpg'
 // import card2 from '../assets/HAbout2.jpg'
 // import AboutH from '../assets/AboutH.jpg'
+import girl from '../assets/girl.png'
+import man from '../assets/boy.svg'
 
 
 const Cards1 = [
@@ -94,96 +96,78 @@ export default function Home() {
     <>
 
       {/* Landing zsection */}
-      <div className="min-h-[600px] bg-primary2 flex flex-col items-center mb-20" >
-        <div className='container pb-32'>
+      <div className="min-h-screen bg-gradient-to-b from-purple-50 flex flex-col items-center pt-28 mb-16" >  {/*mb-20 has been removed */}
+        <div className='container pb-20'> {/*pb-28 changed */}
           <div className='text-btnColor pt-32 pb-8 flex flex-col justify-center items-center text-center'>
-            <div className='mb-8 font-semibold text-md px-3 py-2 bg-yellow-200 rounded-3xl'>
+
+
+            <div className='mb-8 font-semibold text-md px-3 py-2 bg-gradient-to-r from-purple-200 rounded-3xl'>
               <p>Over a thousand ready-to-work creatives!</p>
             </div>
-            <h1 className='text-5xl md:text-7xl font-medium font-serif mb-6'>The Hub for IT excellence</h1>
+            <h1 className='text-5xl md:text-7xl font-medium font-serif mb-6'>The <span className='text-transparent bg-clip-text bg-gradient-to-b from-purple-500 to-btnColor'>Hub</span> for IT excellence</h1>
 
-            <p className='text-xl font-mona mb-8'>The world’s destination for innovative IT services and consulting expertise.</p>
+            <p className='text-xl font-mona mb-16'>The world’s destination for <span className=''>innovative</span> IT services and consulting expertise.</p>
 
-            <a href="#/" className='bg-btnColor px-5 py-3 rounded-3xl text-white hover:scale-105 duration-300'>Learn More</a>
+            <div className='flex flex-row justify-center items-center my-20 gap-28 mr-10 '>
+              <div className='w-[15rem] lg:w-[18rem] ml-0'>
+                <img src={girl} alt="na" />
+              </div>
+              <div className='bg-gradient-to-br from-purple-50 to-purple-100 p-8 w-[29rem] rounded-2xl font-sans font-semibold'>
+                <div>
+                  Our experts bring decades of engineering and technical experience, applying this knowledge to tackle everyday challenges with precision and innovation.</div>
+                <br />
+
+
+                <span className='bg-transparent rounded-3xl border p-2'>#GrowWithEase</span>
+
+                <span className='bg-transparent rounded-3xl border p-2'>#BoostProductivity</span>
+
+              </div>
+
+              <div className='w-[10rem] lg:w-[15rem]'>
+                <img src={man} alt="na" />
+              </div>
+            </div>
+            <div className='flex flex-row gap-10'>
+
+              <a href="#/" className='bg-gradient-to-r from-purple-400 to-purple-500 px-5 py-3 rounded-3xl text-white hover:scale-105 duration-300'>Learn More</a>
+
+              <a href="#/" className='bg-gray-800 text-white px-5 py-3 rounded-3xl hover:scale-105 duration-300'>Contact US</a>
+
+
+            </div>
           </div>
         </div>
       </div>
 
-
-      {/* Before Services Card */}
-      {/* <div className='translate-y-3 mx-auto container pb-20'>
-        Lorem ipsum dolor sit amet.
-      </div> */}
-
-      {/* <div className='justify-center items-center flex flex-col sm:flex-row lg:grid lg:grid-cols-4'>
-          <div className='w-[20rem] h-[10rem]'>
-            <img src={deve} alt="na" />
-          </div>
-
-          <div className='w-[3rem] h-[5rem]'>
-            <img src={cloud} alt="na" />
-          </div>
-
-          <div className='w-[5rem] h-[5rem]'>
-            <img src={security} alt="na"/>
-          </div>
-
-          <div className='w-[4rem] h-[4rem]'>
-            <img src={testing} alt="na" />
-          </div>
-
-          <div >
-            <img src={digital} alt="na" />
-          </div>
-
-          <div>
-            <img src={mobility} alt="na" />
-          </div>
-
-          <div>
-            <img src={web} alt="na" />
-          </div>
-      </div> */}
-
-      {/* <div className='container mx-auto flex flex-col md:flex-row gap-16 justify-center items-center'>
-
-        <div className='w-[30rem] h-[17rem]  -translate-y-16 rounded-3xl' style={{ backgroundImage: ` url(${card})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-        >
-          <div className='px-16 w-full h-full backdrop-blur-sm flex justify-center items-center text-center'>
-            <h1 className='text-white text-4xl font-bold font-serif'>We deliever Best Solution</h1>
-          </div>
+    {/* Cards  */}
+      <div className='flex container mx-auto justify-start items-center max-w-screen-xl mb-20'>
+        <div className='w-[30rem] font-serif lg:text-5xl text-4xl text-btnColor'>
+          <h1>What We DO?</h1>
         </div>
 
-        <div className='w-[23rem] h-[12rem] -translate-y-16 rounded-3xl' style={{ backgroundImage: ` url(${card2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <div className='w-full h-full backdrop-blur-sm flex justify-center items-center'>
-            <h1 className='text-white text-4xl font-bold font-serif'>Our Case</h1>
-          </div>
+        <div className='bg-btnColor text-white p-10 rounded-3xl shadow-md hover:scale-105 duration-500'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam porro voluptatum numquam assumenda nemo, ratione dolore voluptas repudiandae iusto ad deleniti harum, eius magnam laudantium. Quia eveniet rerum recusandae facere. <br /> <br />
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos illo perspiciatis quae facilis nulla fugiat odit corporis hic! Qui?
         </div>
-      </div> */}
 
 
-      {/* <div className='body m-0 flex flex-col justify-center items-center bg-btnColor'>
-        <div className='SKEWED flex mx-8 my-8 bg-primary2 text-btnColor shadow-[0_0_15px_rgba(0,0,0,0.7)]'>
-          <div className='text p-6 w-1/2 flex flex-col justify-evenly items-start'>
-            <h1 className='m-0'>About Us</h1>
-            <p className='text-btnColor text-base'>At Luytens Technology Solutions, we specialize in connecting organizations with top talent. Leveraging our extensive network and industry expertise, we deliver tailored hiring solutions that meet the specific needs of our clients, from multinational corporations to agile startups.</p>
-          </div>
+      </div>
 
-          <div className='image w-1/2 h-[17rem] relative overflow-hidden'>
-            <div className='before:content-[""] before:absolute before:left-[-6.1rem] before:top-1/2 before:translate-y-[-50%] before:rotate-[20deg] before:bg-primary2 before:w-[40%] before:h-[140%] before:shadow-[0_0_20px_rgba(0,0,0,0.7)]'>
-              <img src={AboutH} alt="na" className='object-cover' />
-            </div>
-          </div>
-        </div>
-      </div> */}
+
+        {/* COmpany Section */}
+      {/* <div className='flex justify-center items-center mb-20 pb-8 font-mona'>
+              <h1 className='text-btnColor'>Trusted By Over <span className='bg-purple-700 px-2 rounded-lg'>100+</span> Companies</h1>
+            </div> */}
 
 
 
       {/* Cards Section */}
-      <div className='flex justify-center items-center pb-16'>
+      {/* <div className='flex justify-center items-center pb-16'>
         <h1 className='font-serif text-5xl text-btnColor font-medium'>Our Services</h1>
-      </div>
-      <div className='overflow-x-auto grid grid-cols-8 gap-72 sm:grid-cols-2 lg:grid-cols-4 sm:gap-12 container mx-auto'>
+      </div> */}
+      {/* <div className='overflow-x-auto grid grid-cols-8 gap-72 sm:grid-cols-2 lg:grid-cols-4 sm:gap-12 container mx-auto'>
         {
           Cards1.map((data) => (
             <div className="relative cursor-pointer w-72 rounded-lg h-96 overflow-hidden group hover:scale-105 duration-700" style={{ backgroundColor: data.BgColor }}>
@@ -191,19 +175,19 @@ export default function Home() {
               <p className='pt-16 pl-8 pr-6 text-white text-xl font-semibold absolute z-50'>{data.subdescription}</p>
 
 
-              {/* Background image with gradient overlay */}
+              Background image with gradient overlay
               <div className='absolute inset-0'>
-                {/* Gradient */}
+                Gradient
                 <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent z-10 pointer-events-none"></div>
 
-                {/* Background Image */}
+                Background Image
                 <div
                   className='absolute inset-0 transition-transform duration-700 ease-in-out transform group-hover:translate-y-full group-hover:translate-x-full'
                   style={{ backgroundImage: `url(${data.img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 </div>
               </div>
 
-              {/* Text content with plain background */}
+              Text content with plain background
               <div className="absolute inset-0 flex flex-col justify-center transform -translate-x-full transition-transform duration-700 ease-in-out group-hover:translate-x-0 z-50">
                 <p className='text-white px-6 pt-24 text-md font-thin'>{data.description}</p>
 
@@ -217,9 +201,9 @@ export default function Home() {
 
         <div>
         </div>
-      </div>
+      </div> */}
       {/* Why choose us  */}
-      <div className='bg-secondary2 min-h-[650px]'>
+      <div className='bg-purple-200 min-h-[650px]'>
         <div className='flex flex-col justify-center items-center'>
           <h1 className='pt-20 font-serif lg:text-5xl text-4xl text-btnColor'>Why Choose Us ?</h1>
 

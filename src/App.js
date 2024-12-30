@@ -1,20 +1,28 @@
 import './App.css';
+import Marque from './components/Marque';
+// import Navbar from './components/Navbar'
+// import Landing from './LandingPage/Landing';
+//  import Home from './pages/Home'
+// import Services from './pages/Services'
 // import Contact from './pages/Contact'
-import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
-// import Expand from './pages/Expand';
-// import Home from './pages/Home';
-// import Services from './pages/Services';
-// import Try from './pages/Try';
-// import './LandingPage/Landing.jsx'
-// import Home1 from './pages/Home1.jsx';
-import Landing from './LandingPage/Landing.jsx';
+import Footer1 from './components/Footer1'
+import Home1 from './pages/Home1'
+import Header from './MainPages/Header';
+import Navbar from './MainPages/Navbar';
+
+
+
 
 function App() {
 return (
     <div className="app">
-      {/* <Navbar/>  */}
-      <Landing/>
+      {/* <Navbar/> */}
+      <Header/>
+      <Home1/>
+      <Footer1/> 
+
+
+
     </div>
   );
 }
