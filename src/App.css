@@ -1,6 +1,6 @@
 .scroller{
     overflow-x: hidden;
     -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
-    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+    mask: linear-gradient(90deg, transparent, white 1%, white 99%, transparent);
 }
 

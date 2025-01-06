@@ -1,25 +1,37 @@
 import './App.css';
-import Marque from './components/Marque';
-// import Navbar from './components/Navbar'
-// import Landing from './LandingPage/Landing';
-//  import Home from './pages/Home'
-// import Services from './pages/Services'
-// import Contact from './pages/Contact'
 import Footer1 from './components/Footer1'
 import Home1 from './pages/Home1'
-import Header from './MainPages/Header';
-import Navbar from './MainPages/Navbar';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Services1 from './pages/Services1';
+import About1 from './pages/About1';
+import ServiceDetail from './components/ServicesDetails';
+import Contact1 from './pages/Contact1'
+import Career from './pages/Career';
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 
 
 
 function App() {
-return (
+  return (
     <div className="app">
-      {/* <Navbar/> */}
-      <Header/>
-      <Home1/>
-      <Footer1/> 
+      <Router>
+          <Header />
+          <Navbar />
+
+        <Routes>     
+          <Route path='/' element={<Home1/>}/>  
+          <Route path='/services' element={<Services1/>} />
+          <Route path="/service/:id" element={<ServiceDetail />} />
+          <Route path='/about' element={<About1/>} />
+          <Route path='/contact' element={<Contact1/>} />
+          <Route path='/career' element={<Career/>} />
+        </Routes>
+
+          <Footer1/>
+
+      </Router>
 
 
 

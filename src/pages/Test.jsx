@@ -1,9 +1,11 @@
 import React from "react";
 import { LayoutGrid } from "../components/ui/Layoutgrid";
+import img1 from '../assets/GROWTH (1).png'
+import img2 from '../assets/L (1).png'
 
 export function LayoutGridDemo() {
     return (
-        (<div className="h-[80vh] py-4 w-full lg:w-[60%]">
+        (<div className="h-[80vh] py-4 w-full">
             <LayoutGrid cards={cards} />
         </div>)
     );
@@ -17,8 +19,7 @@ const SkeletonOne = () => {
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-
-                A Smooth and Steep Growth: At Luyten's, we drive innovation and foster sustainable development, creating lasting value while empowering individuals to thrive and grow
+                With Luyten's as your service, we drive innovation and enable sustainable development. A smooth growth overcrossing hardship and challanges with us as your team.
             </p>
         </div>)
     );
@@ -32,7 +33,7 @@ const SkeletonTwo = () => {
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                By combining expertise with innovation, we accelerate growth and create impactful solutions for our partners.
+                By combining our hardwork with our smartwork, we accelerate growth and create impactful solutions for our partners.
             </p>
         </div>)
     );
@@ -45,7 +46,7 @@ const SkeletonThree = () => {
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                At Luyten's, we connect you with a diverse network of exceptional professionals, empowering your business with expertise and innovation to thrive in a competitive world
+                At Luyten's, we intoduce you with a diverse network of exceptional professionals, connecting your business with forte and innovation to grow in a competitive world
             </p>
         </div>)
     );
@@ -58,7 +59,7 @@ const SkeletonFour = () => {
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                At Luyten's, we build enduring relationships by delivering reliable, innovative solutions that drive mutual success and long-term growth.
+                Luyten's as your partner means building enduring relationship. A partner with reliablity and trust that drive mutual success and long-lasting growth.
             </p>
         </div>)
     );
@@ -69,8 +70,7 @@ const cards = [
         id: 1,
         content: <SkeletonOne />,
         className: "md:col-span-2",
-        thumbnail:
-            "https://cdn.dribbble.com/userupload/14784190/file/original-cd9fb446f070701407fbae77e512d4a6.png?resize=1200x900&vertical=center"
+        thumbnail: img1,
     },
     {
         id: 2,
@@ -90,7 +90,6 @@ const cards = [
         id: 4,
         content: <SkeletonFour />,
         className: "md:col-span-2",
-        thumbnail:
-            "https://cdn.dribbble.com/userupload/11790687/file/original-520b1e199116855046e39f4ee3c99bcf.png?resize=1200x583&vertical=center"
+        thumbnail: img2
     },
 ];

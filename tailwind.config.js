@@ -13,9 +13,11 @@ module.exports = {
         statsPart: "#143942",
 
         LightBlack: "#222",
-        OffWhite: "#f3efef",
+        OffWhite: "#f3f3f3",
+        WhiteBg: "#ebebeb",
         Orange: "#d6a3e5",
         lightblack: '#141414',
+        TextWhite: "#f3efef",
       },
 
       container:{
