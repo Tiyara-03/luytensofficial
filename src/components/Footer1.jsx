@@ -1,6 +1,8 @@
 import React from 'react'
 import Luylogo from '../assets/Luylogo.png'
 import { Link } from 'react-router-dom'
+import img1 from '../assets/linkedin.png'
+import img2 from '../assets/twitter.png'
 
 export default function Footer1() {
   return (
@@ -8,44 +10,22 @@ export default function Footer1() {
       <section>
         <div className='bg-OffWhite'>
           <div className='px-8 mx-auto'>
-            <div className='rounded-t-[2rem] bg-LightBlack min-h-[500px] w-full py-6 px-2 sm:p-8'>
-              <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+            <div className='rounded-[2rem] bg-LightBlack min-h-[500px] w-full py-6 px-2 sm:px-8 sm:pt-8 sm:pb-0'>
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10'>
                 {/* Left Section */}
                 <div className="flex flex-col gap-6 mx-6 my-5">
                   <div className='w-[3rem] md:w-[5rem] h-auto'>
                     <img src={Luylogo} alt="/" />
                   </div>
                   <div className='text-purple-300 text-xs flex flex-row items-center gap-3'>
-                    <i class="ri-bubble-chart-fill"></i>
-                    <h1 className='text-[#d9d9d9] font-extrabold text-lg'>Connect and Receive Updates from Luyten's</h1>
+                    <i class="ri-attachment-fill"></i>
+                    <h1 className='text-[#d9d9d9] font-bold text-lg'>Promise we deliver just the best</h1>
                   </div>
-                  <div className="max-w-[400px] flex flex-col gap-4">
-                    <input
-                      type="text"
-                      placeholder="Name"
-                      className="bg-lightblack p-3 text-[#d9d9d9] font-semibold px-5 rounded-xl w-full"
-                    />
-                    <input
-                      type="text"
-                      placeholder="E-mail"
-                      className="bg-lightblack p-3 text-[#d9d9d9] font-semibold px-5 rounded-xl w-full"
-                    />
-                    <div className="flex items-center">
-                      <input
-                        type="checkbox"
-                        id="circleCheckbox"
-                        name="checkboxGroup"
-                        className="appearance-none w-5 h-5 rounded-full bg-LightBlack border border-gray-500 checked:bg-purple-500 checked:border-purple-500 focus:outline-none cursor-pointer"
-                      />
-                      <label
-                        htmlFor="circleCheckbox"
-                        className="text-[#d9d9d9] font-semibold ml-2">
-                        I Agree to Privacy and Terms&Conditions
-                      </label>
-                    </div>
-                    <div className='md:text-lg text-base font-medium text-lightblack p-3 bg-white rounded-xl group-hover:order-1 transition-all duration-700 max-w-[6rem]'>
-                      <p className=''>Submit</p>
-                    </div>
+                  <div className='text-purple-300 font-medium text-sm w-full max-w-[400px]'>
+                    For any inquiries or Business-related information, connect with us. Be part of us, and recieve updates and insights by agreeging to our privacy policy and terms&conditions.
+                  </div>
+                  <div className='md:text-lg text-base font-medium text-lightblack p-3 bg-white rounded-xl w-full max-w-[8rem]'>
+                    <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Contact Us</Link>
                   </div>
                 </div>
 
@@ -53,16 +33,23 @@ export default function Footer1() {
                 <div className='grid grid-cols-2 md:grid-cols-3 gap-4 mt-12 '>
                   <div className='text-[#d9d9d9] flex flex-col gap-4'>
                     <p className='text-[#d9d9d9] font-bold'>Services</p>
-                    <Link to='/services'  className='hover:underline'>Staffing</Link>
-                    <Link to="/services" className='hover:underline'>Mobility</Link>
-                    <Link to="/services" className='hover:underline'>Web and Clouds</Link>
-                    <Link to="/services" className='hover:underline'>Digital Marketing</Link>
+                    <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
+                      to='/services' className='hover:text-purple-500'>Staffing</Link>
+                    <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
+                      to="/services" className='hover:text-purple-500'>Mobility</Link>
+                    <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
+                      to="/services" className='hover:text-purple-500'>Web and Clouds</Link>
+                    <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
+                      to="/services" className='hover:text-purple-500'>Digital Marketing</Link>
                   </div>
                   <div className='text-[#d9d9d9] flex flex-col gap-4'>
                     <p className='text-[#d9d9d9] font-bold'>Company</p>
-                    <Link to="/about" className='hover:underline'>About Us</Link>
-                    <Link to="/project" className='hover:underline'>Project</Link>
-                    <Link to="/contact" className='hover:underline'>Contact Us</Link>
+                    <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
+                      to="/about" className='hover:text-purple-500'>About Us</Link>
+                    <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
+                      to="/project" className='hover:text-purple-500'>Services</Link>
+                    <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
+                      to="/career" className='hover:text-purple-500'>Career</Link>
                   </div>
                   <div className='text-[#d9d9d9] flex flex-col gap-4'>
                     <p className='text-[#d9d9d9] font-bold'>Location</p>
@@ -79,7 +66,29 @@ export default function Footer1() {
                   </div>
                 </div>
               </div>
+
+              {/* Bottom */}
+              <div className='flex flex-row justify-end items-center gap-6 pr-20'>
+                <h1 className='text-base text-[#d9d9d9] font-medium'>Our Social Links</h1>
+                <div className='w-[2rem]'>
+                  <img src={img1} alt="na" className='w-full' />
+                </div>
+                <div className='w-[2rem]'>
+                  <img src={img2} alt="na" className='w-full' />
+                </div>
+              </div>
+              <div className='px-8 pt-10 flex flex-row gap-8 justify-center items-center'>
+                <h1 className='text-white'><span>©</span>2025 Luytens Technology Solution.</h1>
+                <h1 className='text-white'>All rights reserved</h1>
+                <Link to="/" className='text-white'>Privacy Policy | Terms of service</Link>
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
+                >
+                  <i class="ri-arrow-up-s-line text-black bg-OffWhite p-2 rounded-xl"></i>
+                </button>
+              </div>
+
             </div>
+
           </div>
         </div>
       </section>

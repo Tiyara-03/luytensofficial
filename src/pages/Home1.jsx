@@ -1,10 +1,8 @@
 import React from 'react'
 import 'remixicon/fonts/remixicon.css'
-import Luylogo from '../assets/Luylogo.png'
 import Client from './Client'
 import bgimg from '../assets/Luy2.png'
 import { Link } from 'react-router-dom'
-// import Navbar from '../components/Navbar';
 
 
 const services = [
@@ -45,7 +43,7 @@ export default function Home1() {
             <div className='mx-auto px-14 md:px-24 md:pr-36 w-[100%] max-w-[84rem] pt-4'>
               <div className='flex flex-col gap-4 mt-16'>
                 <div className='text-purple-300 text-xs flex flex-row items-center gap-3'>
-                  <i class="ri-bubble-chart-fill"></i>
+                  <i class="ri-attachment-fill"></i>
                   <h1 className='text-white font-extrabold text-sm'>The Hub for IT excellence and consulting</h1>
                 </div>
                 {/* Heading */}
@@ -76,7 +74,7 @@ export default function Home1() {
 
         <div className='mx-auto px-6 md:px-24 bg-LightBlack min-h-[600px]'>
           <div className='ml-15 text-purple-300 text-xs flex flex-row items-center gap-3 absolute mt-[-1rem] p-4 bg-LightBlack rounded-lg'>
-            <i class="ri-bubble-chart-fill"></i>
+            <i class="ri-attachment-fill"></i>
             <h1 className='text-TextWhite font-extrabold text-sm'>Services</h1>
           </div>
 
@@ -111,7 +109,7 @@ export default function Home1() {
 
           <div>
             <div className=' text-purple-300 text-xs flex flex-row items-center justify-start gap-3 p-4 md:mx-16'>
-              <i class="ri-bubble-chart-fill"></i>
+              <i class="ri-attachment-fill"></i>
               <h1 className='text-LightBlack font-extrabold text-sm'>How We Work</h1>
             </div>
               <div className='flex flex-col md:flex-row justify-center items-center md:items-start gap-12 px-4 xl:px-20 my-16'>
@@ -141,7 +139,7 @@ export default function Home1() {
         <section>
           <div className='mx-auto px-6 md:px-24'>
             <div className=' text-purple-300 text-xs flex flex-row items-center justify-center gap-3 p-4 max-w-[8rem] bg-lightblack rounded-3xl'>
-              <i class="ri-bubble-chart-fill"></i>
+              <i class="ri-attachment-fill"></i>
               <h1 className='text-TextWhite font-extrabold text-sm'>Values</h1>
             </div>
             <div className='flex flex-col justify-center items-center text-start'>
@@ -157,7 +155,7 @@ export default function Home1() {
         <section className='mx-auto px-14 md:mx-16 py-32'>
           <div className='flex flex-col gap-10'>
             <div className='text-purple-600 text-xs flex flex-row items-center gap-3'>
-              <i class="ri-bubble-chart-fill"></i>
+              <i class="ri-attachment-fill"></i>
               <h1 className='text-black font-extrabold text-sm'>Our Clients</h1>
             </div>
             <div className='scroller'>

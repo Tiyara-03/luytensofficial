@@ -24,7 +24,7 @@ export default function Navbar() {
                   <img src={Luylogo} alt="Luyten's Logo" />
                 </div>
                 <div className='font-bold text-base md:text-lg'>
-                  <h1>Luyten's Technology Solution</h1>
+                  <h1>Luytens Technology Solutions</h1>
                 </div>
               </div>
             </Link>

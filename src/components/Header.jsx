@@ -24,7 +24,7 @@ export default function Header() {
           >
             <div className='flex flex-row justify-center items-center gap-2 px-6'>
               <div className='text-xs'>
-                <i class="ri-bubble-chart-fill"></i>
+                <i class="ri-attachment-fill"></i>
               </div>
               <div className='md:text-base text-sm font-extrabold font-sans w-[7rem] relative'>
                 <h1>Coming Soon</h1>

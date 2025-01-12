@@ -1,8 +1,23 @@
 // Import React
-import React from 'react';
+import React, { useState } from "react";
 
 // Career Page Component
 const Career = () => {
+  const [fileError, setFileError] = useState("");
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const validFormats = ["application/pdf", "application/msword"];
+      if (!validFormats.includes(file.type)) {
+        setFileError("Only PDF and DOC formats are allowed.");
+        e.target.value = ""; // Reset the file input
+      } else {
+        setFileError(""); // Clear any previous error
+      }
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#f3f3f3] text-[#222] flex flex-col items-center p-6">
       {/* Heading Section */}
@@ -51,14 +66,19 @@ const Career = () => {
           {/* Resume or Company Name Input */}
           <div>
             <label htmlFor="resume" className="block text-sm font-medium mb-2">
-              Upload Resume or Company Broucher
+              Upload Resume or Company Broucher (PDF/DOC formats only)
             </label>
             <input
               type="file"
               id="resume"
               name="resume"
+              accept=".pdf,.doc"
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#222]"
+              onChange={handleFileChange}
             />
+            {fileError && (
+              <p className="text-sm text-red-500 mt-2">{fileError}</p>
+            )}
           </div>
 
           {/* Message Input */}

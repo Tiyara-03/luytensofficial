@@ -38,7 +38,7 @@ export default function About1() {
                 </div>
                 <section>
                     <div className=' text-purple-300 text-xs flex flex-row items-center justify-start gap-3 p-4 md:mx-16'>
-                        <i class="ri-bubble-chart-fill"></i>
+                        <i class="ri-attachment-fill"></i>
                         <h1 className='text-LightBlack font-extrabold text-sm'>What we lead to</h1>
                     </div>
                     <div className='px-5 mx-auto'>
@@ -53,7 +53,7 @@ export default function About1() {
                 <section>
                     <div className='flex flex-col md:flex-row gap-12 justify-between pt-16 items-start px-12 order-1 mb-20'>
                         <div className=' text-purple-300 text-xs flex flex-row items-center justify-start gap-3 p-4 '>
-                            <i class="ri-bubble-chart-fill"></i>
+                            <i class="ri-attachment-fill"></i>
                             <h1 className='text-LightBlack font-extrabold text-sm'>Our Journey</h1>
                         </div>
                         <div className='flex flex-col gap-6 text-black xl:max-w-[600px] lg:max-w-[400px] w-full md:mr-24 md:pr-14'>
@@ -68,7 +68,7 @@ export default function About1() {
                 <section>
                     <div className='mx-auto px-12 mb-20'>
                         <div className=' text-purple-300 text-xs flex flex-row items-center justify-start gap-3 p-4'>
-                            <i class="ri-bubble-chart-fill"></i>
+                            <i class="ri-attachment-fill"></i>
                             <h1 className='text-LightBlack font-extrabold text-sm'>Our Benefits</h1>
                         </div>
 
@@ -93,7 +93,7 @@ export default function About1() {
                 <section>
                     <div className='mx-auto px-12 pb-36'>
                         <div className=' text-purple-300 text-xs flex flex-row items-center justify-start gap-3 p-4'>
-                            <i class="ri-bubble-chart-fill"></i>
+                            <i class="ri-attachment-fill"></i>
                             <h1 className='text-LightBlack font-extrabold text-sm'>Our Mission</h1>
                         </div>
                         <div className='flex flex-col md:flex-row justify-center items-center md:items-start gap-12 px-4 xl:px-20 mt-20'>

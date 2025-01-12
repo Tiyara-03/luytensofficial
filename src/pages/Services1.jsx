@@ -4,7 +4,7 @@ import { servicesData } from '../components/ServicesDetails'; // Import services
 const services = [
   {
     id: 1,
-    title: '/STAFFING/',
+    title: 'STAFFING',
     description: 'Matching Top Talent with the perfect opportunity, our staffing solutions drive success for both businesses and professionals.',
   },
   {

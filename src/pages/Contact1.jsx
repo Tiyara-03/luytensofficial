@@ -42,7 +42,7 @@ export default function Contact1() {
           <div className="flex-1 mx-auto px-14 md:px-24 md:pr-36 w-[100%] max-w-[84rem] pt-4">
             <div className="flex flex-col gap-4 mt-16">
               <div className="text-purple-300 text-base flex flex-row items-center gap-3">
-                <i className="ri-circle-fill"></i>
+                <i class="ri-attachment-fill"></i>
                 <h1 className="text-white font-bold text-lg">Want to know more About Us</h1>
               </div>
               {/* Heading */}
@@ -64,8 +64,8 @@ export default function Contact1() {
                     <div className="text-LightBlack text-xl p-2 bg-white rounded-xl group-hover:order-2 transition-all duration-700">
                       <i className="ri-arrow-right-up-line"></i>
                     </div>
-                    <div className="md:text-lg text-base font-medium text-lightblack p-3 bg-white rounded-xl group-hover:order-1 transition-all duration-700">
-                      <a href="mailto:info@Luytens.com" className="cursor-pointer">
+                    <div className="md:text-lg text-base font-medium text-lightblack p-3 bg-white rounded-xl group-hover:order-1 transition-all duration-700 cursor-pointer">
+                      <a href="mailto:info@Luytens.com" className="">
                         info@Luytens.com
                       </a>
                     </div>
@@ -128,6 +128,20 @@ export default function Contact1() {
                   sitekey="6LeAi68qAAAAAKrRI71kPcyvpu439_PSQG48YKjC"
                   onChange={onChange}
                 />,
+
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="circleCheckbox"
+                    name="checkboxGroup"
+                    className="appearance-none w-5 h-5 rounded-full bg-LightBlack border border-gray-500 checked:bg-purple-500 checked:border-purple-500 focus:outline-none cursor-pointer"
+                  />
+                  <label
+                    htmlFor="circleCheckbox"
+                    className="text-[#d9d9d9] font-semibold ml-2">
+                    I Agree to Privacy and Terms&Conditions
+                  </label>
+                </div>
 
                 <button
                   type="submit"
