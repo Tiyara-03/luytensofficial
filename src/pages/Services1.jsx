@@ -9,17 +9,17 @@ const services = [
   },
   {
     id: 2,
-    title: '/WEB AND CLOUD/',
+    title: 'WEB AND CLOUD',
     description: 'Transforming businesses with innovative web and cloud solutions, empowering them to thrive in the digital era.',
   },
   {
     id: 3,
-    title: '/CONSULTING SERVICES/',
+    title: 'CONSULTING SERVICES',
     description: 'Unleashing the potential of mobility for businesses, our solutions drive innovation and efficiency on the go.',
   },
   {
     id: 4,
-    title: '/DIGITAL MARKETING/',
+    title: 'DIGITAL MARKETING',
     description: 'Amplify your brand\'s presence and engage your audience with our data-driven digital marketing strategies.',
   },
 ];
