@@ -47,16 +47,16 @@ export default function Footer1() {
                     <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
                       to="/about" className='hover:text-purple-500'>About Us</Link>
                     <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
-                      to="/project" className='hover:text-purple-500'>Services</Link>
+                      to="/services" className='hover:text-purple-500'>Services</Link>
                     <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scrolls to the top on navigation
                       to="/career" className='hover:text-purple-500'>Career</Link>
                   </div>
                   <div className='text-[#d9d9d9] flex flex-col gap-4'>
                     <p className='text-[#d9d9d9] font-bold'>Location</p>
-                    <div>
+                    <a className='cursor-pointer' target="_blank" href='https://www.google.com/maps/place/West+Windsor+Township,+NJ,+USA/@40.2924137,-74.7084155,12z/data=!3m1!4b1!4m6!3m5!1s0x89c3e0f72f41d053:0xec810e272f35aec7!8m2!3d40.3312702!4d-74.638181!16zL20vMHhwOGg?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D'>
                       <h1>West Windsor,</h1>
                       <h1>New Jersey, USA.</h1>
-                    </div>
+                    </a>
                     <div>
                       <h1>Noida, UP</h1>
                       <h1>India</h1>
@@ -70,11 +70,11 @@ export default function Footer1() {
               {/* Bottom */}
               <div className='flex flex-row justify-end items-center gap-6 pr-20'>
                 <h1 className='text-base text-[#d9d9d9] font-medium'>Our Social Links</h1>
+                <a href='https://www.linkedin.com/company/luytens-technology-solutions/posts/?feedView=all' className='w-[2rem]'>
+                  <img src={img1} alt="na" className='w-full cursor-pointer' />
+                </a>
                 <div className='w-[2rem]'>
-                  <img src={img1} alt="na" className='w-full' />
-                </div>
-                <div className='w-[2rem]'>
-                  <img src={img2} alt="na" className='w-full' />
+                  <img src={img2} alt="na" className='w-full cursor-pointer' />
                 </div>
               </div>
               <div className='px-8 pt-10 flex flex-row gap-8 justify-center items-center'>

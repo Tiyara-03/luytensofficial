@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from '@emailjs/browser';
 
 function onChange(value) {
   console.log("Captcha value:", value);
@@ -9,6 +10,25 @@ function onChange(value) {
 
 
 export default function Contact1() {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_ecw9b9g', 'template_y25c7wl', form.current, {
+        publicKey: 'q3AhWb7N8zG0zkGpK',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
   const [formData, setFormData] = useState({
     name: "",
@@ -85,8 +105,9 @@ export default function Contact1() {
           {/* Right Section (Contact Form) */}
           <div className="flex-1 mx-auto px-14 md:px-24 md:pr-36 w-[100%] max-w-[84rem] pt-4 justify-center items-center flex">
             {/* <h2 className="text-3xl font-semibold text-gray-800 mb-6">Get in Touch</h2> */}
-            <div className='w-full'>
-              <form className="space-y-4" onSubmit={handleSubmit}>
+            <div className='w-full' onSubmit={handleSubmit}>
+              <form ref={form} onSubmit={sendEmail}
+               className="space-y-4">
                 {/* Name Input */}
                 <div>
                   <input
