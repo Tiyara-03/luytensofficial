@@ -16,12 +16,12 @@ import { HashRouter as Router, Route, Routes} from "react-router-dom";
 function App() {
   return (
     <div className="app">
-      <Router basename='/luytensofficial'>
+      <Router>
           <Header />
           <Navbar />
 
         <Routes>     
-          <Route path='/' element={<Home1/>}/>  
+          <Route path='/luytensofficial' element={<Home1/>}/>  
           <Route path='/services' element={<Services1/>} />
           <Route path="/service/:id" element={<ServiceDetail />} />
           <Route path='/about' element={<About1/>} />
