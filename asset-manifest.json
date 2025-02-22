@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/luytensofficial/static/css/main.05d5a401.css",
+    "main.js": "/luytensofficial/static/js/main.c73f30b3.js",
+    "static/media/remixicon.svg?t=1718271040674": "/luytensofficial/static/media/remixicon.f38690bdde29bddbc211.svg",
+    "static/media/remixicon.eot?t=1718271040674": "/luytensofficial/static/media/remixicon.d87042cf9a3f67d1cab2.eot",
+    "static/media/remixicon.ttf?t=1718271040674": "/luytensofficial/static/media/remixicon.88da6179288d7835c2f0.ttf",
+    "static/media/remixicon.woff?t=1718271040674": "/luytensofficial/static/media/remixicon.1bdc36c90398c9d667d1.woff",
+    "static/media/remixicon.woff2?t=1718271040674": "/luytensofficial/static/media/remixicon.8aece9ab0de67b79cfda.woff2",
+    "static/media/L (1).png": "/luytensofficial/static/media/L (1).f0936a7dd7b6dbff50eb.png",
+    "static/media/Luylogo.png": "/luytensofficial/static/media/Luylogo.bdcd26fe1a0ec32ffe4c.png",
+    "static/media/GROWTH (1).png": "/luytensofficial/static/media/GROWTH (1).b9e67d8b03e6cbf37965.png",
+    "static/media/Luy2.png": "/luytensofficial/static/media/Luy2.0faf344d6a7b185b9426.png",
+    "static/media/Wp.jpg": "/luytensofficial/static/media/Wp.0e959763ddac769ecc51.jpg",
+    "static/media/Info.jpg": "/luytensofficial/static/media/Info.e5c37f53ac0850318f51.jpg",
+    "static/media/Go.jpg": "/luytensofficial/static/media/Go.075d474e7f82af6982c4.jpg",
+    "static/media/twitter.png": "/luytensofficial/static/media/twitter.e58e4997ef85cbd7054c.png",
+    "static/media/Bs.jpg": "/luytensofficial/static/media/Bs.518b00c50de5a9857c40.jpg",
+    "static/media/linkedin.png": "/luytensofficial/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/slick.svg": "/luytensofficial/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/luytensofficial/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/luytensofficial/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/luytensofficial/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/luytensofficial/index.html",
+    "main.05d5a401.css.map": "/luytensofficial/static/css/main.05d5a401.css.map",
+    "main.c73f30b3.js.map": "/luytensofficial/static/js/main.c73f30b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05d5a401.css",
+    "static/js/main.c73f30b3.js"
+  ]
+}
