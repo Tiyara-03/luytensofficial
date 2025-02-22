@@ -8,7 +8,7 @@ import About1 from './pages/About1';
 import ServiceDetail from './components/ServicesDetails';
 import Contact1 from './pages/Contact1'
 import Career from './pages/Career';
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { HashRouter as Router, Route, Routes} from "react-router-dom";
 
 
 
@@ -16,7 +16,7 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 function App() {
   return (
     <div className="app">
-      <Router>
+      <Router basename='/luytensofficial'>
           <Header />
           <Navbar />
 
