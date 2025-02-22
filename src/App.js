@@ -21,10 +21,10 @@ function App() {
           <Navbar />
 
         <Routes>     
-          <Route path='/luytensofficial' element={<Home1/>}/>  
-          <Route path='/services' element={<Services1/>} />
+          <Route exact path='/' element={<Home1/>}/>  
+          <Route exact path='/services' element={<Services1/>} />
           <Route path="/service/:id" element={<ServiceDetail />} />
-          <Route path='/about' element={<About1/>} />
+          <Route exact path='/about' element={<About1/>} />
           <Route path='/contact' element={<Contact1/>} />
           <Route path='/career' element={<Career/>} />
         </Routes>
