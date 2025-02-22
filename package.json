@@ -2,7 +2,7 @@
   "name": "luytensofficial",
   "version": "0.1.0",
   "homepage": "https://Tiyara-03.github.io/luytensofficial",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.17.0",
