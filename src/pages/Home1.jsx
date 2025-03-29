@@ -89,7 +89,7 @@ export default function Home1() {
                 to={`/service/${service.id}`}
                 key={service.id}
                 className="group"
-                onClick={() => window.scrollTo({ top: 0, behavior: 'fast' })} // Scrolls to the top on navigation
+                onClick={() => window.scrollTo({ top: 0, behavior: 'auto' })} // Scrolls to the top on navigation
               >
                 <div className='text-TextWhite border-r-[1px] rounded-2xl px-5 hover:border-b-[1px] duration-200 hover:bg-gradient-l from-transparent to-black'>
                   <h1 className='text-3xl mb-8'>{service.title}</h1>
